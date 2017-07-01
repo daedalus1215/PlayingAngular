@@ -13,8 +13,11 @@ import { HighlightDirective } from './highlight.directive';
 
 import { ManualService } from './manual-service/manual.service';
 import { StockService } from './stock-service/stock.service';
+import { CurrencyService } from './currency.service';
 
 import { routing } from './app.routing';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BondsDirective } from './bonds.directive';
 
 
 @NgModule({
@@ -24,6 +27,8 @@ import { routing } from './app.routing';
     ManualComponent,
     StockDirectiveDirective,
     HighlightDirective,
+    DashboardComponent,
+    BondsDirective,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,7 @@ import { routing } from './app.routing';
     HttpModule,
     routing
   ],
-  providers: [StockService, ManualService],
+  providers: [StockService, ManualService, CurrencyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
