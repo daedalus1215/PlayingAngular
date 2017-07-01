@@ -12,13 +12,15 @@ import { HighlightDirective } from './highlight.directive';
 
 import { StockService} from './stock.service';
 import { ManualService } from './manual-service/manual.service';
+import { DateFormatterPipe } from './date-formatter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksComponentComponent,
     StockDirectiveDirective,
-    HighlightDirective    
+    HighlightDirective,
+    DateFormatterPipe    
   ],
   imports: [
     BrowserModule,
