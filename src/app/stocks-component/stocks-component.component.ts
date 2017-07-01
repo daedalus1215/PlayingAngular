@@ -1,21 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { StockService } from '../stock.service';
-import { ManualService } from '../manual-service/manual.service';
+import { StockService } from '../stock-service/stock.service';
 
 @Component({
-  selector: 'app-stocks-component',
+  selector: 'stocks-component',
   templateUrl: './stocks-component.component.html',
   styleUrls: ['./stocks-component.component.css']
 })
 export class StocksComponentComponent{
 
-  title = 'List of Stocks: ';
+  title = 'Stock Component: ';
   stocks;
-  manuals;
 
-  constructor (stockService : StockService, manualService : ManualService) {
+  constructor (stockService : StockService) {
     this.stocks = stockService.getStocks();
-    this.manuals = manualService.getManuals();
   }
 
 }
