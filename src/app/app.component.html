@@ -8,13 +8,13 @@
 
 
 
-<div *ngIf="profile">
+<div *ngIf="profile else noProfileFound">
   Name: {{ profile.name }}
 </div>
 
-<div *ngIf="!profile">
-  No profile found!
-</div>
+<ng-template #noProfileFound>
+  No Profile Found with Ng-Template
+</ng-template>
 
 <!-- include the manual component -->
 <manual-component></manual-component>
