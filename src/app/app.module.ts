@@ -11,20 +11,21 @@ import { HighlightDirective } from './highlight.directive';
 
 
 import { StockService} from './stock.service';
+import { ManualService } from './manual-service/manual.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksComponentComponent,
     StockDirectiveDirective,
-    HighlightDirective
+    HighlightDirective    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [StockService],
+  providers: [StockService, ManualService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
