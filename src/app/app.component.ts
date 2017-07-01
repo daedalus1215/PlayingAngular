@@ -9,4 +9,5 @@ export class AppComponent {
   title = 'app works!';
   today = new Date();
 
+  profile = { id: 10001, name: 'James Bond', role: 'Administrator'};
 }
