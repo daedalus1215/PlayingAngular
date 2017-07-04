@@ -1,10 +1,10 @@
-import { Angular24Page } from './app.po';
+import { Angular2SeedPage } from './app.po';
 
-describe('angular24 App', function() {
-  let page: Angular24Page;
+describe('angular2-seed App', function() {
+  let page: Angular2SeedPage;
 
   beforeEach(() => {
-    page = new Angular24Page();
+    page = new Angular2SeedPage();
   });
 
   it('should display message saying app works', () => {

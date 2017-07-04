@@ -1,26 +1,3 @@
-{{today | date: "dd/MMM/yyyy hh:mm a"}}
-
-
-
 <h1>
   {{title}}
 </h1>
-
-
-
-<div *ngIf="profile">
-  Name: {{ profile.name }}
-</div>
-
-<div *ngIf="!profile">
-  No profile found!
-</div>
-
-<!-- include the manual component -->
-<manual-component></manual-component>
-
-
-<a routerLink="/stocks">STOCKS<a>
-
-<!-- includes the routes we are declaring in app.routing.ts -->
-<router-outlet></router-outlet>

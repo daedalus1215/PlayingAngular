@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class Angular24Page {
+export class Angular2SeedPage {
   navigateTo() {
     return browser.get('/');
   }
