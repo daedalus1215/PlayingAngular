@@ -5,9 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+// Custom Courses
+import { CoursesComponent } from "./courses-component/courses.component";
+import { AuthorComponent } from "./author-component/author.component";
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoursesComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,
