@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "myproject",
+=======
+  "name": "angular2-seed",
+>>>>>>> 2c5d1fafe86f69f1e4dbfca14c89f18ed5943901
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -12,6 +16,7 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
@@ -22,6 +27,16 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "bootstrap": "^3.3.7",
+=======
+    "@angular/common": "^2.3.1",
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/forms": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "^2.3.1",
+    "@angular/platform-browser-dynamic": "^2.3.1",
+    "@angular/router": "^3.3.1",
+>>>>>>> 2c5d1fafe86f69f1e4dbfca14c89f18ed5943901
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
     "rxjs": "^5.1.0",

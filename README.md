@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Myproject
+=======
+# Angular2Seed
+>>>>>>> 2c5d1fafe86f69f1e4dbfca14c89f18ed5943901
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
