@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 // App's main component
 import { AppComponent } from './app.component';
 
+<<<<<<< HEAD
 // Bootstrap module
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 
@@ -35,6 +36,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     routing
   ],
   providers: [StocksService],
+=======
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+>>>>>>> 76adf354ca25454e81684bbb8d710946eff44d52
   bootstrap: [AppComponent]
 })
 export class AppModule { }
