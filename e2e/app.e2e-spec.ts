@@ -1,14 +1,14 @@
-import { Angular24Page } from './app.po';
+import { CfeAppPage } from './app.po';
 
-describe('angular24 App', function() {
-  let page: Angular24Page;
+describe('cfe-app App', () => {
+  let page: CfeAppPage;
 
   beforeEach(() => {
-    page = new Angular24Page();
+    page = new CfeAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });

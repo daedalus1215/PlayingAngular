@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
-  today = new Date();
-
-  profile = { id: 10001, name: 'James Bond', role: 'Administrator'};
+  title = 'Hello World';
 }

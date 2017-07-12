@@ -1,4 +1,10 @@
 <h2>{{ title }}</h2>
+
+<ul>
+  <li *ngFor="let stockMarket of stockMarkets">
+    {{ stockMarket }}
+  </li>
+</ul>
 <ul>
   <li *ngFor="let stock of stocks">
     {{ stock }}

@@ -1,44 +1,40 @@
+// Browser module
 import { BrowserModule } from '@angular/platform-browser';
+// Angular Core module
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
+// App's main component
 import { AppComponent } from './app.component';
-import { StocksComponentComponent } from './stocks-component/stocks-component.component';
-import { ManualComponent } from './manual-component/manual-component' ;
 
-import { StockDirectiveDirective } from './stock-directive.directive';
-import { HighlightDirective } from './highlight.directive';
+// Bootstrap module
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms' ;
 
-import { ManualService } from './manual-service/manual.service';
-import { StockService } from './stock-service/stock.service';
-import { CurrencyService } from './currency.service';
+// Routing
+import { routing} from './app.routing';
 
-import { routing } from './app.routing';
+// Stock Module
+import { StocksComponent } from './stocks/stocks-component/stocks.component';
+import { StocksService } from './stocks/stocks-service/stocks.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { BondsDirective } from './bonds.directive';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StocksComponentComponent,
-    ManualComponent,
-    StockDirectiveDirective,
-    HighlightDirective,
-    DashboardComponent,
-    BondsDirective,
+    StocksComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
-    NgbModule
+    NgbModule.forRoot(),
+    routing
   ],
-  providers: [StockService, ManualService, CurrencyService],
+  providers: [StocksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
