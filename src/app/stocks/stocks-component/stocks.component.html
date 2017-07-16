@@ -10,7 +10,8 @@
 <hr>
 
 
-<ul *ngIf="isShowingStockMarket">
+<ul [ngClass]="{customClass:true}" 
+    *ngIf="isShowingStockMarket">
   <li *ngFor="let stock of stocks">
     {{ stock }}
   <li>
