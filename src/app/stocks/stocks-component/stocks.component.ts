@@ -12,6 +12,7 @@ export class StocksComponent{
   stocks;
   stockMarkets;
   stockMarketColors = 'blue';
+  isColor = true;
   isShowingStockMarket = true;
   
   constructor (stocksService : StocksService) {

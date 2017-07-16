@@ -10,7 +10,7 @@
 <hr>
 
 
-<ul [ngClass]="{customClass:true}" 
+<ul [ngClass]="{customClass:isColor}" 
     *ngIf="isShowingStockMarket">
   <li *ngFor="let stock of stocks">
     {{ stock }}
