@@ -1,12 +1,18 @@
 <h2>{{ title }}</h2>
 
-<ul>
+
+
+<ul [ngStyle]="{'color': stockMarketColors}">
   <li *ngFor="let stockMarket of stockMarkets">
     {{ stockMarket }}
   </li>
 </ul>
-<ul>
+<hr>
+
+
+<ul *ngIf="isShowingStockMarket">
   <li *ngFor="let stock of stocks">
     {{ stock }}
   <li>
 </ul>
+

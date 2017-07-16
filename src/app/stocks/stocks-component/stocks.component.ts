@@ -11,7 +11,9 @@ export class StocksComponent{
   title = 'Stock Component: ';
   stocks;
   stockMarkets;
-
+  stockMarketColors = 'blue';
+  isShowingStockMarket = true;
+  
   constructor (stocksService : StocksService) {
     this.stocks = stocksService.getStocks();
     this.stockMarkets = stocksService.getStockMarkets();
