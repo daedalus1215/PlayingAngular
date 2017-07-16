@@ -8,6 +8,7 @@ import { StocksService } from '../stocks/stocks-service/stocks.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  stocks: string[];
 
   constructor(private stocksService: StocksService) {}   
 
@@ -18,7 +19,7 @@ export class DashboardComponent implements OnInit {
   getAllStocks() {
     this.stocksService.getStocksAPI()
     .subscribe(
-      data => console.log(JSON.stringify(data)),
+      data => this.stocks = data,
       error => console.log('Server Error')
     );
   }
