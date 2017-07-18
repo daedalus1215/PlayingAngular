@@ -19,6 +19,16 @@
       "stockCode": "HP",
       "name": "Hewlett Packard",
       "id": 4
+    },
+    {
+      "name": "TSLA",
+      "stockCode": "Tesla",
+      "id": 5
+    },
+    {
+      "name": "DA",
+      "stockCode": "Dapple",
+      "id": 6
     }
   ]
 }

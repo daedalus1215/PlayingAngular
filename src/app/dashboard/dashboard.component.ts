@@ -23,4 +23,9 @@ export class DashboardComponent implements OnInit {
       error => console.log('Server Error')
     );
   }
+
+  createStock(newStockCode: string, newName: string) {
+    this.stocksService.createStock(newStockCode, newName).subscribe();
+    location.reload();
+  }
 }
