@@ -9,6 +9,8 @@ import { StocksService } from '../stocks/stocks-service/stocks.service';
 })
 export class DashboardComponent implements OnInit {
   stocks: string[];
+  selectedStock: any;
+  updateEnabled = false;
 
   constructor(private stocksService: StocksService) {}
 
@@ -27,5 +29,15 @@ export class DashboardComponent implements OnInit {
   createStock(newStockCode: string, newName: string) {
     this.stocksService.createStock(newStockCode, newName).subscribe();
     location.reload();
+  }
+
+  updateStock(newStockCode: string, newName: string) {
+    this.stocksService.updateStock(this.selectedStock.id, newStockCode, newName).subscribe();
+    location.reload();
+  }
+
+  loadDetails(stock: any) {
+    this.updateEnabled = true;
+    this.selectedStock = stock;
   }
 }
