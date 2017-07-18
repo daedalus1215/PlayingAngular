@@ -8,22 +8,22 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class StocksService {
-    
+
     constructor (private http: Http) {
 
     }
 
     getStocksAPI(): Observable<any> {
-        return this.http.get("http://localhost:3000/stocks")
+        return this.http.get('http://localhost:3000/stocks')
                     .map( (res: Response) => res.json() )
-                    .catch((error:any) => Observable.throw(error.json().error || ' Server Error'));
+                    .catch((error: any) => Observable.throw(error.json().error || ' Server Error'));
     }
 
-    getStocks() : string[] {
+    getStocks(): string[] {
         return ['AAPL', 'MSFT', 'GOOG'];
     }
 
-    getStockMarkets() : string[] {
+    getStockMarkets(): string[] {
         return  ['EU', 'US', 'NASDAQ', 'EURONEXT', 'HKSE'];
     }
 }

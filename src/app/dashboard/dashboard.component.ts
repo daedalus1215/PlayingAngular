@@ -10,12 +10,12 @@ import { StocksService } from '../stocks/stocks-service/stocks.service';
 export class DashboardComponent implements OnInit {
   stocks: string[];
 
-  constructor(private stocksService: StocksService) {}   
+  constructor(private stocksService: StocksService) {}
 
   ngOnInit() {
     this.getAllStocks();
   }
-  
+
   getAllStocks() {
     this.stocksService.getStocksAPI()
     .subscribe(

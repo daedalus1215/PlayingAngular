@@ -3,13 +3,22 @@
   <p class="lead">Stocks, Bonds, Mutual Funds</p>
   <hr class="my-4">
   <p>A simple Angular 4 finance web application (playing with Angular 4).</p>
-
-  <ul>
-    <li *ngFor="let stock of stocks">
-      {{ stock.id }} | {{ stock.name}} | {{ stock.stockCode }}
-    </li>
-  </ul>
-
+<div class="m-x-auto p-a-2" style="width: 900px">
+  <table class="table table-striped table-inverse table-sm center">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name </th>
+        <th>Stock Code</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let stock of stocks">
+      <td>{{ stock.id }}</td> 
+      <td>{{ stock.name}}</td> 
+      <td>{{ stock.stockCode }}</td>
+    </tr>
+  </table>
+</div>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
