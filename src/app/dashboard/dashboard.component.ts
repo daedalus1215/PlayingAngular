@@ -27,18 +27,27 @@ export class DashboardComponent implements OnInit {
   }
 
   createStock(newStockCode: string, newName: string) {
-    this.stocksService.createStock(newStockCode, newName).subscribe();
-    location.reload();
+    this.stocksService.createStock(newStockCode, newName).subscribe(
+      data => {
+        this.getAllStocks();
+      }
+    );
   }
 
   updateStock(newStockCode: string, newName: string) {
-    this.stocksService.updateStock(this.selectedStock.id, newStockCode, newName).subscribe();
-    location.reload();
+    this.stocksService.updateStock(this.selectedStock.id, newStockCode, newName).subscribe(
+      data => {
+        this.getAllStocks();
+      }
+    );
   }
 
   deleteStock(stockId: string) {
-    this.stocksService.deleteStock(stockId).subscribe();
-    location.reload();
+    this.stocksService.deleteStock(stockId).subscribe(
+      data => {
+        this.getAllStocks();
+      }
+    );
   }
 
   loadDetails(stock: any) {
