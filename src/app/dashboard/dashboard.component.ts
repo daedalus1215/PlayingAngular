@@ -36,6 +36,11 @@ export class DashboardComponent implements OnInit {
     location.reload();
   }
 
+  deleteStock(stockId: string) {
+    this.stocksService.deleteStock(stockId).subscribe();
+    location.reload();
+  }
+
   loadDetails(stock: any) {
     this.updateEnabled = true;
     this.selectedStock = stock;

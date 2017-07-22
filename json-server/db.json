@@ -1,16 +1,6 @@
 {
   "stocks": [
     {
-      "name": "Idddd",
-      "stockCode": "IBM",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "stockCode": "GOOG",
-      "name": "Google"
-    },
-    {
       "id": 3,
       "stockCode": "AAPL",
       "name": "Apple Computers"
@@ -26,9 +16,14 @@
       "id": 5
     },
     {
-      "name": "DA",
-      "stockCode": "Dapple",
+      "name": "ff",
+      "stockCode": "dd",
       "id": 6
+    },
+    {
+      "name": "ff",
+      "stockCode": "dd",
+      "id": 7
     }
   ]
 }
