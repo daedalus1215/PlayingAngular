@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+import { CreateStockModal } from './create-stock-modal';
 
 import { StocksService } from '../stocks/stocks-service/stocks.service';
 
@@ -12,7 +15,7 @@ export class DashboardComponent implements OnInit {
   selectedStock: any;
   updateEnabled = false;
 
-  constructor(private stocksService: StocksService) {}
+  constructor(private stocksService: StocksService, private modalService: NgbModal) {}
 
   ngOnInit() {
     this.getAllStocks();
@@ -27,11 +30,7 @@ export class DashboardComponent implements OnInit {
   }
 
   createStock(newStockCode: string, newName: string) {
-    this.stocksService.createStock(newStockCode, newName).subscribe(
-      data => {
-        this.getAllStocks();
-      }
-    );
+    const modalRef = this.modalService.open(CreateStockModal);
   }
 
   updateStock(newStockCode: string, newName: string) {

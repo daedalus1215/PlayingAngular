@@ -18,14 +18,17 @@ import { routing} from './app.routing';
 // Stock Module
 import { StocksComponent } from './stocks/stocks-component/stocks.component';
 import { StocksService } from './stocks/stocks-service/stocks.service';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreateStockModal } from './dashboard/create-stock-modal';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksComponent,
-    DashboardComponent
+    DashboardComponent,
+    CreateStockModal
   ],
   imports: [
     BrowserModule,
