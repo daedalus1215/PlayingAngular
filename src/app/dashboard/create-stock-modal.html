@@ -6,10 +6,21 @@
     </button>
     </div>
     <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <p>
+            Stock Code: <input #newStockCode />
+        </p>
+        <p>
+            Stock Name: <input #newStockName />
+        </p>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+        <button type="button" 
+            class="btn btn-success" 
+            (click)="addStock(newStockCode.value, newStockName.value); newStockCode.value=''; newStockName.value=''" 
+            data-dismiss="modal">
+            Add Stock
+        </button>
     </div>
 </ng-template>
 
